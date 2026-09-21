@@ -14,6 +14,7 @@ Moduli disponibili:
 
 - `src/m01_flusso_e_logica_base/`
 - `src/m02_funzioni_e_contratti/` (7 esercizi)
+- `src/m03_strutture_dati_e_pattern/` (10 esercizi)
 
 I file `student` sono volutamente vuoti all'inizio. Le soluzioni complete sono nei file `reference`.
 
@@ -28,6 +29,8 @@ Gli esercizi seguono una difficoltà crescente:
 5. Calcolatrice modulare: separazione dei compiti e `float | None`.
 6. Calcolatore BMI: scomposizione top-down a tre strati.
 7. Conversioni: modulo locale e `if __name__ == "__main__"`.
+
+Il Modulo 03 prosegue con liste, dizionari, tabelle di record e pattern di elaborazione dati.
 
 ## Installazione
 
@@ -46,12 +49,13 @@ Per eseguire tutti i test degli studenti di un modulo:
 ```bash
 python -m pytest tests/test_m01_flusso
 python -m pytest tests/test_m02_funzioni
+python -m pytest tests/test_m03_strutture
 ```
 
 Per eseguire tutti i test degli studenti:
 
 ```bash
-python -m pytest tests/test_m01_flusso tests/test_m02_funzioni
+python -m pytest tests/test_m01_flusso tests/test_m02_funzioni tests/test_m03_strutture
 ```
 
 Per eseguire i test di un singolo esercizio:
@@ -59,6 +63,7 @@ Per eseguire i test di un singolo esercizio:
 ```bash
 python -m pytest tests/test_m01_flusso/test_es01.py
 python -m pytest tests/test_m02_funzioni/test_es01.py
+python -m pytest tests/test_m03_strutture/test_es01.py
 ```
 
 Sostituisci `es01` con l'esercizio desiderato.
@@ -72,12 +77,13 @@ Per eseguire tutti i test reference di un modulo:
 ```bash
 python -m pytest tests/test_m01_flusso_reference
 python -m pytest tests/test_m02_funzioni_reference
+python -m pytest tests/test_m03_strutture_reference
 ```
 
 Per eseguire tutti i test delle soluzioni docente:
 
 ```bash
-python -m pytest tests/test_m01_flusso_reference tests/test_m02_funzioni_reference
+python -m pytest tests/test_m01_flusso_reference tests/test_m02_funzioni_reference tests/test_m03_strutture_reference
 ```
 
 Per eseguire il test reference di un singolo esercizio:
@@ -85,6 +91,7 @@ Per eseguire il test reference di un singolo esercizio:
 ```bash
 python -m pytest tests/test_m01_flusso_reference/test_es01.py
 python -m pytest tests/test_m02_funzioni_reference/test_es01.py
+python -m pytest tests/test_m03_strutture_reference/test_es01.py
 ```
 
 ## Nota
