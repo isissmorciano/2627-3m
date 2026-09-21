@@ -15,6 +15,7 @@ Moduli disponibili:
 - `src/m01_flusso_e_logica_base/`
 - `src/m02_funzioni_e_contratti/` (7 esercizi)
 - `src/m03_strutture_dati_e_pattern/` (10 esercizi)
+- `src/m04_testing_e_code_review/` (4 esercizi)
 
 I file `student` sono volutamente vuoti all'inizio. Le soluzioni complete sono nei file `reference`.
 
@@ -31,6 +32,8 @@ Gli esercizi seguono una difficoltà crescente:
 7. Conversioni: modulo locale e `if __name__ == "__main__"`.
 
 Il Modulo 03 prosegue con liste, dizionari, tabelle di record e pattern di elaborazione dati.
+
+Nel Modulo 04 gli esercizi `student` sono file di test da scrivere, mentre i file `reference` contengono suite pytest complete.
 
 ## Installazione
 
@@ -68,6 +71,15 @@ python -m pytest tests/test_m03_strutture/test_es01.py
 
 Sostituisci `es01` con l'esercizio desiderato.
 
+Per eseguire gli esercizi del Modulo 04, lancia direttamente i file di test dello studente:
+
+```bash
+python -m pytest src/m04_testing_e_code_review/es01_student.py
+python -m pytest src/m04_testing_e_code_review/es02_student.py
+python -m pytest src/m04_testing_e_code_review/es03_student.py
+python -m pytest src/m04_testing_e_code_review/es04_student.py
+```
+
 ## Test delle soluzioni docente
 
 I test reference verificano le soluzioni complete presenti nei file `esXX_reference.py`.
@@ -92,6 +104,12 @@ Per eseguire il test reference di un singolo esercizio:
 python -m pytest tests/test_m01_flusso_reference/test_es01.py
 python -m pytest tests/test_m02_funzioni_reference/test_es01.py
 python -m pytest tests/test_m03_strutture_reference/test_es01.py
+```
+
+Per eseguire tutti i test reference del Modulo 04:
+
+```bash
+python -m pytest src/m04_testing_e_code_review/es01_reference.py src/m04_testing_e_code_review/es02_reference.py src/m04_testing_e_code_review/es03_reference.py src/m04_testing_e_code_review/es04_reference.py
 ```
 
 ## Nota
