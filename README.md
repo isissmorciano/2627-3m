@@ -16,6 +16,7 @@ Moduli disponibili:
 - `src/m02_funzioni_e_contratti/` (7 esercizi)
 - `src/m03_strutture_dati_e_pattern/` (10 esercizi)
 - `src/m04_testing_e_code_review/` (4 esercizi)
+- `src/m05_file_json_e_package/` (6 esercizi)
 
 I file `student` sono volutamente vuoti all'inizio. Le soluzioni complete sono nei file `reference`.
 
@@ -32,6 +33,8 @@ Gli esercizi seguono una difficoltà crescente:
 7. Conversioni: modulo locale e `if __name__ == "__main__"`.
 
 Il Modulo 03 prosegue con liste, dizionari, tabelle di record e pattern di elaborazione dati.
+
+Il Modulo 05 prosegue con file di testo, JSON, CSV, import relativi e package Python (`coordinate`, `quiz`, `biblioteca`).
 
 Nel Modulo 04 gli esercizi `student` sono file di test da scrivere, mentre i file `reference` contengono suite pytest complete.
 
@@ -53,6 +56,7 @@ Per eseguire tutti i test degli studenti di un modulo:
 python -m pytest tests/test_m01_flusso
 python -m pytest tests/test_m02_funzioni
 python -m pytest tests/test_m03_strutture
+python -m pytest tests/test_m05_file_pkg
 ```
 
 Per eseguire tutti i test degli studenti:
@@ -67,6 +71,7 @@ Per eseguire i test di un singolo esercizio:
 python -m pytest tests/test_m01_flusso/test_es01.py
 python -m pytest tests/test_m02_funzioni/test_es01.py
 python -m pytest tests/test_m03_strutture/test_es01.py
+python -m pytest tests/test_m05_file_pkg/test_es01.py
 ```
 
 Sostituisci `es01` con l'esercizio desiderato.
@@ -96,6 +101,7 @@ Per eseguire tutti i test delle soluzioni docente:
 
 ```bash
 python -m pytest tests/test_m01_flusso_reference tests/test_m02_funzioni_reference tests/test_m03_strutture_reference
+python -m pytest tests/test_m01_flusso_reference tests/test_m02_funzioni_reference tests/test_m03_strutture_reference tests/test_m05_file_pkg_reference
 ```
 
 Per eseguire il test reference di un singolo esercizio:
@@ -104,6 +110,7 @@ Per eseguire il test reference di un singolo esercizio:
 python -m pytest tests/test_m01_flusso_reference/test_es01.py
 python -m pytest tests/test_m02_funzioni_reference/test_es01.py
 python -m pytest tests/test_m03_strutture_reference/test_es01.py
+python -m pytest tests/test_m05_file_pkg_reference/test_es01.py
 ```
 
 Per eseguire tutti i test reference del Modulo 04:
