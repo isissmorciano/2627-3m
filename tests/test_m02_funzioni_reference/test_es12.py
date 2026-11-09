@@ -1,4 +1,4 @@
-from src.m02_funzioni_e_contratti.es05_student import calcola
+from src.m02_funzioni_e_contratti.es12_reference import calcola
 
 
 def test_operazioni():

@@ -1,4 +1,4 @@
-from src.m02_funzioni_e_contratti.es02_student import calcola_prezzo_scontato
+from src.m02_funzioni_e_contratti.es09_student import calcola_prezzo_scontato
 
 
 def test_sconto_valido():

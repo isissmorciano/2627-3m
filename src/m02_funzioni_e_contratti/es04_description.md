@@ -1,28 +1,18 @@
-# Esercizio 04: Funzione Pura - Geometria del Rettangolo
+# Esercizio 04: Prezzi dei Prodotti
 
-> **Prerequisiti teorici**: Modulo 03 (Cap. 03 - Funzioni come contratti, Type Hints, `return` vs `print`)  
-> **Obiettivo**: Restituire più risultati da una funzione tramite una tupla.
+> **Obiettivo**: Scorrere un dizionario e selezionare i valori secondo un criterio.
 
-## Obiettivo
-Scrivere una funzione che calcoli area e perimetro di un rettangolo senza stampare nulla a video, restituendo entrambi i valori a chi la chiama.
+Scrivi un programma con la sola funzione `main()` che usa il dizionario
+`{"Quaderno": 2.5, "Penna": 1.0, "Zaino": 30.0}`. Chiedi un prezzo massimo
+decimale e, usando `.items()`, stampa i prodotti con prezzo minore **o uguale**
+alla soglia, nel loro ordine nel dizionario, con due cifre decimali. Se non
+ce ne sono, stampa `Nessun prodotto trovato.`. Puoi assumere che il prezzo
+inserito sia un numero valido.
 
-## Il Contratto Software
+## Esempio di esecuzione
 
-```python
-def calcola_rettangolo(base: float, altezza: float) -> tuple[float, float]:
-    """Calcola area e perimetro di un rettangolo."""
-```
-
-## Istruzioni
-1. La funzione `calcola_rettangolo` **NON deve fare né `input()` né `print()`**.
-2. Calcola $area = base \times altezza$ e $perimetro = 2 \times (base + altezza)$.
-3. Restituisci la coppia di valori come tupla: `return area, perimetro`.
-4. Nel `main()`, chiedi i dati, spacchetta il risultato e stampa i valori con due decimali.
-
-## Esempio di Esecuzione
 ```text
-Inserisci la base: 5.0
-Inserisci l'altezza: 3.0
-Area: 15.00
-Perimetro: 16.00
+Prezzo massimo: 2.5
+Quaderno: 2.50 euro
+Penna: 1.00 euro
 ```

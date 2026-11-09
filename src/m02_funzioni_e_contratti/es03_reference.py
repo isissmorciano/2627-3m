@@ -1,14 +1,11 @@
-def genera_saluto(nome: str, cognome: str, titolo: str = "Sig./Sig.ra") -> str:
-    """Costruisce una formula di benvenuto personalizzata."""
-    return f"Benvenuto/a {titolo} {nome} {cognome}!"
-
-
 def main() -> None:
-    saluto1 = genera_saluto("Mario", "Rossi")
-    saluto2 = genera_saluto("Laura", "Bianchi", "Dott.ssa")
+    rubrica = {"Anna": "123456", "Marco": "654321", "Sara": "111222"}
+    nome = input("Nome da cercare: ").strip()
 
-    print(saluto1)
-    print(saluto2)
+    if nome in rubrica:
+        print(f"Numero: {rubrica[nome]}")
+    else:
+        print("Contatto non trovato.")
 
 
 if __name__ == "__main__":

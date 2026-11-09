@@ -13,7 +13,7 @@ Ogni esercizio `esXX` dispone di questi file nella cartella del modulo:
 Moduli disponibili:
 
 - `src/m01_flusso_e_logica_base/`
-- `src/m02_funzioni_e_contratti/` (7 esercizi)
+- `src/m02_funzioni_e_contratti/` (14 esercizi)
 - `src/m03_strutture_dati_e_pattern/` (10 esercizi)
 - `src/m04_testing_e_code_review/` (4 esercizi)
 - `src/m05_file_json_e_package/` (6 esercizi)
@@ -25,14 +25,22 @@ I file `student` sono volutamente vuoti all'inizio. Le soluzioni complete sono n
 
 Gli esercizi seguono una difficoltà crescente:
 
-1. Area del triangolo: funzione pura e `return` di un valore scalare.
-2. Calcolo dello sconto: validazione con valore sentinella.
-3. Saluto personalizzato: parametro con valore di default.
-4. Geometria del rettangolo: ritorno multiplo tramite tupla.
-5. Calcolatrice modulare: separazione dei compiti e `float | None`.
-6. Calcolatore BMI: scomposizione top-down a tre strati.
-7. Conversioni: modulo locale e `if __name__ == "__main__"`.
+1. Scheda studente: creazione e lettura di un dizionario.
+2. Aggiornamento del profilo: modifica e aggiunta di valori.
+3. Rubrica: ricerca di una chiave.
+4. Prezzi dei prodotti: scorrimento e selezione.
+5. Voti dello studente: media e massimo.
+6. Conteggio delle parole: dizionario di frequenze.
+7. Registro della classe: dizionari annidati e medie.
+8. Area del triangolo: funzione pura e `return` di un valore scalare.
+9. Calcolo dello sconto: validazione con valore sentinella.
+10. Saluto personalizzato: parametro con valore di default.
+11. Geometria del rettangolo: ritorno multiplo tramite tupla.
+12. Calcolatrice modulare: separazione dei compiti e `float | None`.
+13. Calcolatore BMI: scomposizione top-down a tre strati.
+14. Conversioni: modulo locale e `if __name__ == "__main__"`.
 
+Gli esercizi 1-7 si svolgono usando solo `main()`, senza definire altre funzioni.
 Il Modulo 03 prosegue con liste, dizionari, tabelle di record e pattern di elaborazione dati.
 
 Il Modulo 05 prosegue con file di testo, JSON, CSV, import relativi e package Python (`coordinate`, `quiz`, `biblioteca`).
@@ -73,13 +81,14 @@ Per eseguire i test di un singolo esercizio:
 
 ```bash
 python -m pytest tests/test_m01_flusso/test_es01.py
-python -m pytest tests/test_m02_funzioni/test_es01.py
+python -m pytest tests/test_m02_funzioni/test_es08.py
 python -m pytest tests/test_m03_strutture/test_es01.py
 python -m pytest tests/test_m05_file_pkg/test_es01.py
 python -m pytest tests/test_m06_progetto/test_es01.py
 ```
 
-Sostituisci `es01` con l'esercizio desiderato.
+Sostituisci il numero dell'esercizio con quello desiderato. Nel Modulo 02 i
+test degli studenti sono disponibili per gli esercizi 08-14.
 
 Per eseguire gli esercizi del Modulo 04, lancia direttamente i file di test dello studente:
 

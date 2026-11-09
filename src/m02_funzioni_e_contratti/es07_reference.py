@@ -1,15 +1,19 @@
-from .conversioni import celsius_a_fahrenheit, km_a_miglia
-
-
 def main() -> None:
-    temp_c = float(input("Inserisci temperatura in °C: "))
-    dist_km = float(input("Inserisci distanza in km: "))
+    registro = {
+        "Alice": {"Italiano": 8.0, "Matematica": 7.0},
+        "Marco": {"Italiano": 6.0, "Matematica": 9.0, "Informatica": 9.0},
+        "Sara": {},
+    }
 
-    temp_f = celsius_a_fahrenheit(temp_c)
-    dist_mi = km_a_miglia(dist_km)
-
-    print(f"{temp_c:.1f}°C equivalgono a {temp_f:.1f}°F")
-    print(f"{dist_km:.2f} km equivalgono a {dist_mi:.2f} miglia")
+    for nome, voti in registro.items():
+        if not voti:
+            print(f"{nome}: nessun voto")
+        else:
+            somma = 0.0
+            for voto in voti.values():
+                somma += voto
+            media = somma / len(voti)
+            print(f"{nome}: {media:.2f}")
 
 
 if __name__ == "__main__":

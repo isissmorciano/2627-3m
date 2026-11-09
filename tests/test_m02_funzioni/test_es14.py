@@ -1,4 +1,4 @@
-from src.m02_funzioni_e_contratti.es07_student import main
+from src.m02_funzioni_e_contratti.es14_student import main
 
 
 def test_programma_conversioni(monkeypatch, capsys):

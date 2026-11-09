@@ -1,4 +1,4 @@
-from src.m02_funzioni_e_contratti.es06_student import calcola_bmi, classifica_bmi
+from src.m02_funzioni_e_contratti.es13_student import calcola_bmi, classifica_bmi
 
 
 def test_calcola_bmi():

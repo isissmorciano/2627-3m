@@ -1,4 +1,4 @@
-from src.m02_funzioni_e_contratti.es03_student import genera_saluto
+from src.m02_funzioni_e_contratti.es10_reference import genera_saluto
 
 
 def test_saluto_con_titolo_predefinito():

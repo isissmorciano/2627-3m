@@ -1,4 +1,4 @@
-from src.m02_funzioni_e_contratti.es04_student import calcola_rettangolo
+from src.m02_funzioni_e_contratti.es11_student import calcola_rettangolo
 
 
 def test_calcola_rettangolo():

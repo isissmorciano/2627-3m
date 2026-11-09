@@ -1,18 +1,15 @@
-def calcola_rettangolo(base: float, altezza: float) -> tuple[float, float]:
-    """Calcola area e perimetro di un rettangolo."""
-    area = base * altezza
-    perimetro = 2 * (base + altezza)
-    return area, perimetro
-
-
 def main() -> None:
-    base = float(input("Inserisci la base: "))
-    altezza = float(input("Inserisci l'altezza: "))
+    prezzi = {"Quaderno": 2.5, "Penna": 1.0, "Zaino": 30.0}
+    prezzo_massimo = float(input("Prezzo massimo: "))
+    trovato = False
 
-    area, perimetro = calcola_rettangolo(base, altezza)
+    for prodotto, prezzo in prezzi.items():
+        if prezzo <= prezzo_massimo:
+            print(f"{prodotto}: {prezzo:.2f} euro")
+            trovato = True
 
-    print(f"Area: {area:.2f}")
-    print(f"Perimetro: {perimetro:.2f}")
+    if not trovato:
+        print("Nessun prodotto trovato.")
 
 
 if __name__ == "__main__":
